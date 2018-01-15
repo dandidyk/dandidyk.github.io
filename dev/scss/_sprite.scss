@@ -1,0 +1,132 @@
+.sprite{
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+
+&-affregato {
+    width: 187px;
+    height: 70px;
+    background-position: -5px -5px;
+}
+
+&-arrow {
+    width: 172px;
+    height: 118px;
+    background-position: -202px -5px;
+}
+
+&-cost_ef {
+    width: 117px;
+    height: 109px;
+    background-position: -384px -5px;
+}
+
+&-customer_or {
+    width: 114px;
+    height: 76px;
+    background-position: -511px -5px;
+}
+
+&-domain_expert {
+    width: 88px;
+    height: 104px;
+    background-position: -635px -5px;
+}
+
+&-email {
+    width: 78px;
+    height: 73px;
+    background-position: -733px -5px;
+}
+
+&-github {
+    width: 30px;
+    height: 30px;
+    background-position: -821px -5px;
+}
+
+&-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -861px -5px;
+}
+
+&-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -901px -5px;
+}
+
+&-maria_ferrero {
+    width: 379px;
+    height: 283px;
+    background-position: -941px -5px;
+}
+
+&-new_delphi {
+    width: 68px;
+    height: 79px;
+    background-position: -1330px -5px;
+}
+
+&-onesshot {
+    width: 175px;
+    height: 124px;
+    background-position: -1408px -5px;
+}
+
+&-quzica_mobile {
+    width: 385px;
+    height: 288px;
+    background-position: -1593px -5px;
+}
+
+&-request {
+    width: 80px;
+    height: 81px;
+    background-position: -1988px -5px;
+}
+
+&-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -2078px -5px;
+}
+
+&-tm {
+    width: 148px;
+    height: 130px;
+    background-position: -2118px -5px;
+}
+
+&-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -2276px -5px;
+}
+
+&-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -2316px -5px;
+}
+
+&-updated_tech_stack {
+    width: 82px;
+    height: 100px;
+    background-position: -2356px -5px;
+}
+
+&-upside {
+    width: 143px;
+    height: 68px;
+    background-position: -2448px -5px;
+}
+
+&-zikkan_mmobile {
+    width: 402px;
+    height: 302px;
+    background-position: -2601px -5px;
+}
+}
