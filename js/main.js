@@ -207,9 +207,9 @@ $("#form").on("submit", function (e) {
     data: sendInfo,
     success: function(data){
       if (data.indexOf("success") != -1) {
-         window.location = 'http://karpachoff.com/uverennost/product/new/thank'
+         window.location = 'http://http://karpachoff.com/03/thank'
       } else {
-          window.location = 'http://karpachoff.com/uverennost/product/new/error'
+          window.location = 'http://http://karpachoff.com/03/error'
       }
     }
   });

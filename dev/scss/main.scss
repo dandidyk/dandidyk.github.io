@@ -23,7 +23,7 @@ $FM : 'FuturaPT-Medium';
 $FB : 'FuturaPT-Bold';
 $grey: #575757;
 $green: #6ca042;
-$purple : #8a668b;
+$purple : #513650;
 $red: #d83f71;
 * { 
 	box-sizing: border-box;
@@ -128,10 +128,11 @@ html,body {
 			text-transform: uppercase;
 			margin-bottom: 6px;
 			font-family: $FB;
+			font-size: 1.2em;
 		}
 		font-family: $SUI;
 		padding: 25px;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		text-align: center;
 	}
 	&__form {
@@ -261,6 +262,7 @@ html,body {
 	}
 	&__course {
 		&__title {
+			text-transform: uppercase;
 			text-align: center;
 			font-family: $UB;
 			font-size: 1.575em;
@@ -345,15 +347,16 @@ html,body {
 
 .for {
 	text-align: center;
-	padding: 0 calc( 50% - 590px);
+	padding: 50px calc( 50% - 590px) 0;
 	&__title {
 		font-family: $UB;
 		font-size: 1.875em;
 		text-transform: uppercase;
 		font-weight: normal;
+		margin-bottom: 0;
 	}	
 	&__content {
-		margin: 50px 0;
+		margin: 0px 0 40px;
 		display: flex;
 		align-items: center;
 		text-align: left;
@@ -917,7 +920,7 @@ html,body {
 	overflow: hidden;
 	padding: 30px 20px;
 	text-align: center;
-	color: #7c6174;
+	color: $purple;
 	&__title {
 		max-width: 500px;
 		font-family: $UB;
@@ -964,7 +967,7 @@ html,body {
 		font-size: 1.125em;
 		font-family: $FBO;
 		text-align: right;
-		color: #7c6174;
+		color: $purple;
 	}	
 	&__privacy , .dogovor{
 		text-decoration: underline;
@@ -972,7 +975,7 @@ html,body {
 		font-size: 1.125em;
 		margin-top: 8px;
 		display: block;
-		color: #7c6174;
+		color: $purple;
 		cursor: pointer;
 	}
 }

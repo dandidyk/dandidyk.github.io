@@ -1,0 +1,112 @@
+
+
+@keyframes mymove {
+    0%   {transform: translate(0px, 0px);}
+    50%  {transform: translate(30px, 0px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+// variables 
+$SUI: 'SegoeUIRegular';
+$SUIB: 'SegoeUI-Bold';
+$SUIL: 'SegoeUI-Light';
+$SUISB: 'SegoeUI-Semibold';
+$OSSB: 'OpenSans-Semibold';
+$OS: 'OpenSans';
+$OSB: 'OpenSans-Bold';
+$U: 'Ubuntu';
+$UL : 'Ubuntu-Light';
+$UB : 'Ubuntu-Bold';
+$blue : #36b0b1;
+
+* { 
+	box-sizing: border-box;
+}      
+   
+html,body {     
+	width: 100%;   
+	height: 100%;
+	font-size: 16px;
+	position: relative; 
+}
+
+.hidden { opacity: 0;}
+.visible { opacity: 1;}
+
+
+.link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 25px 60px;
+	font-family: $UL;
+	font-size: 1.3em;
+	display: inline-block;
+	border-radius: 40px;
+	margin: 24px auto;
+	transition: all 1s; 
+    background: #CE5252;
+	&:hover {
+	   transform: scale(1.1);
+
+	}
+}
+
+
+.header {
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	background-color: #fff;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 854px;
+		height: 538px;
+		background-image: url('../img/before.png');
+		top: 0px;
+		left: calc(30% - 600px);
+	}
+	&__wrap {
+		max-width: 1220px;	
+		margin: 0 auto;
+		padding: 50px 20px;
+		position: relative;	
+	}
+	&__topline {
+		padding: 0 20px;
+		margin-bottom: 45px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__logo {
+		max-width: 235px;
+		img {
+			width: 100%;
+		}
+	}
+	&__contacs {
+
+	}
+	&__phone , &__email{
+		padding-left: 30px;
+		color: #631a91;
+		text-decoration: none;
+		display: block;
+		font-size: 1em;
+		font-family: $U;
+		text-align: right;
+	}
+
+	&__title {
+		
+		font-family: $UB;
+		font-size: 1.875em;
+		margin: 60px 0;
+		color: #CE5252;
+	}
+}
+
+@import "media"; 
