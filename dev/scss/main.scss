@@ -55,7 +55,7 @@ html,body {
 	&:hover {
 		color: #f67d58;
 		box-shadow: 0 0 0 2px #f67d58;
-		background-color: transparent;
+		background-color: #fff;
 		font-family: $FM;
 	}
 }
@@ -78,6 +78,91 @@ html,body {
 	transition: all .8s;
 	border:2px solid green !important;
 }
+
+.popup__leave {
+	z-index: 20;
+	display: none;
+	max-width: 600px;
+	margin: auto;
+	position: fixed;
+	left: calc(50% - 300px);
+	top: 50px;
+	background-color: #e8e8e8;
+	box-shadow: 0 0 3500px 500px rgba(000,000,000,.4);
+	border-radius: 30px;
+	padding-top: 0;
+	.close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 53px;
+		height: 51px;
+		border-radius: 50%;
+		background-color: #fff;
+		box-shadow: 0 0 15px 0px #000;
+		cursor: pointer;
+		overflow: hidden;
+		span {
+			position: absolute;
+			width: 80%;
+			left: 5px;
+			height: 2px;
+			background-color: $purple;
+			transform: rotate(45deg);
+			top: 25px;
+			transition: all 1.6s;
+			&:nth-child(2) {
+				transform: rotate(-45deg);
+			}
+		}
+		&:hover span {
+			transform: rotate(-405deg);
+			&:nth-child(2) {
+				transform: rotate(405deg);
+			}
+		}
+	}
+	&__text {
+		margin-top: 40px;
+		&__title {
+			text-transform: uppercase;
+			margin-bottom: 6px;
+			font-family: $FB;
+		}
+		font-family: $SUI;
+		padding: 25px;
+		font-size: 1.5em;
+		text-align: center;
+	}
+	&__form {
+		margin: 10px 0 20px;
+		padding: 0 20px;
+		text-align: center;
+		input::-webkit-input-placeholder { color: $purple; }
+		input:-moz-placeholder { color: $purple; }	}
+	&__input {
+		display: inline-block;
+		font-family: $U;
+		font-size: 1.5em;
+		padding: 30px 40px;
+		border-radius: 10px;
+		margin-right: 5px;
+		margin-left: 5px;
+		margin-bottom: 10px;
+		border: none;
+		max-width: 320px;
+		outline: none;
+		background-color: #d2d1d1;
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+	}
+	&__button {
+		margin-top: 5px;
+		border: none;
+	}
+}
+
 .popup {
 	display: block;
 	padding: 20px;
@@ -97,7 +182,7 @@ html,body {
 		width: 53px;
 		height: 51px;
 		border-radius: 50%;
-		background-color: #3e9cdd;
+		background-color: $purple;
 		box-shadow: 0 0 20px 0px #ccc;
 		cursor: pointer;
 		overflow: hidden;
@@ -608,6 +693,11 @@ html,body {
 			font-family: $FB;
 			font-size: 100px;	
 		}
+		&__title {
+			font-family: $FB;
+			font-size: 1.2em;
+		}
+
 		&__list  {
 			list-style-type: none;
 			padding: 0;
@@ -622,8 +712,13 @@ html,body {
 			font-family: $U;
 			font-size: 1.3em;
 			margin: 20px 10px;
-			max-width: 290px;
+			max-width: 330px;
 			position: relative; 
+			ul {
+				margin: 15px 0;
+				padding: 0;
+				text-align: left;
+			}
 
 		}
 	}	
@@ -666,52 +761,9 @@ html,body {
 }
 
 
-// .review {
-// 	overflow: hidden;
-// 	padding: 30px calc(50% - 595px);
-// 	text-align: center;
-// 	&__title {
-// 		font-family: $UB;
-// 		margin: 30px auto;
-// 		font-size: 2.21em;
-// 		text-transform: uppercase;	
-// 		color: $green;
-// 	}
-// 	&__list {
-// 		margin-top: 60px;
-// 		list-style-type: none;
-// 		padding: 0;
-// 		display: flex;
-// 		justify-content: space-around;
-// 	}
-// 	&__item {
-// 		margin: 30px 5px;
-// 		max-width: 575px;
-// 		padding: 20px;
-// 		border: 2px solid $green;
-// 		background-color: #e3d099;
-// 		border-bottom: 8px solid $green;
-// 		&__title {
-// 			font-family: $UB;
-// 			font-size: 1.55em;
-// 			margin: 10px 0 45px 0;
-// 			text-transform: uppercase;
-// 		}
-// 		&__text {
-// 			font-family: $FL;
-// 			font-size: 1.37em;
-// 			span {
-// 				display: block;
-// 			}
-// 		}
-// 	}
-
-// }
-
-
 .pack {
 	overflow: hidden;
-	padding: 30px calc(50% - 480px);
+	padding: 30px calc(50% - 600px);
 	text-align: center;
 	&__title {
 		max-width: 500px;
@@ -727,14 +779,13 @@ html,body {
 		flex-wrap: wrap;
 	}
 	&__packet {
-		padding: 0 30px 30px 30px;
-		max-width: 400px;
+		padding: 0 20px 20px 20px;
+		max-width: 350px;
 		box-shadow: 0 0 15px 0px #444;
 		border-radius: 5px 5px 0 0;
 		margin: 20px 10px;
 	}
 	&__item__title {
-
 		margin: 0 -30px;
 		background-color: $purple;
 		font-family: $FL;

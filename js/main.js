@@ -70,6 +70,7 @@ $('.close').on('click',function () {
   $('.modal').fadeOut(600);
   $('.popup').fadeOut(600);
   $('.shadow_popup').fadeOut();
+  $('.popup__leave').fadeOut();
 })
 
 jQuery(function($){
@@ -81,6 +82,13 @@ jQuery(function($){
       $('.shadow_popup').fadeOut(100);
     }
   });
+});
+
+
+
+$('html').one('mouseleave',function() {
+  $('.popup__leave').slideDown(500);
+  $('.shadow').fadeIn();
 });
 
 ///

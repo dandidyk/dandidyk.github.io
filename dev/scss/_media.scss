@@ -185,7 +185,15 @@
 
 
 @media only screen and (max-width : 600px) {
-
+	.popup__leave {
+		left: 2%;
+		width: 96%;
+		overflow: scroll;
+		height: 90%;
+		&__input {
+			width: 90%;
+		}
+	}
 	.header {
 		overflow: hidden;
 
